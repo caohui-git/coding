@@ -2,6 +2,8 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.util.Arrays.copyOfRange;
 
@@ -93,6 +95,11 @@ public class Wc {
         int[] nums = {1, 2, 7, 4, 2, 9, 12, 1};
         Wc wc = new Wc();
         //wc.qs(nums, 0 ,nums.length - 1);
-        System.out.println(Arrays.toString(wc.Kst_small_with_bigrootheap(nums, 4)));
+        //System.out.println(Arrays.toString(wc.Kst_small_with_bigrootheap(nums, 4)));
+        String req = "{additionParams={\"exportType\":\"订单明细信息\",\"startTime\":\"2020-04-01 00:00:00\",\"endTime\":\"2020-05-01 00:00:00\"}, pin=芷容越邦拼购专卖店, venderId=10294219}";
+        Pattern p = Pattern.compile("additionParams=\\{(.+?)\\}");
+        Matcher m  = p.matcher(req);
+        if(m.find())
+            System.out.println(m.groupCount());
     }
 }
