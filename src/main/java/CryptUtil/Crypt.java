@@ -4,7 +4,9 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class Crypt {
     public static String ta = "0123456789abcdef";
@@ -163,8 +165,13 @@ public class Crypt {
         //System.out.println(m.base64EncodeBytes(ba));
         //byte[] byt = "123456".getBytes(UTF_8);
         //String tmp="70c2e18fc533c5a581cbe14ce40e38f6";
-        System.out.println(cr.sha512_hash("123456", "asdfg", 5000));
+        //System.out.println(cr.md5_hash("123456", "asdfg"));
         //String[] ss = "63, 62, 20, 41, 40, 61, 19, 18, 39, 60, 59, 17, 38, 37, 58, 16, 15, 36, 57, 56, 14, 35, 34, 55, 13, 12, 33, 54, 53, 11, 32, 31, 52, 10, 9, 30, 51, 50, 8, 29, 28, 49, 7, 6, 27, 48, 47, 5, 26, 25, 46, 4, 3, 24, 45, 44, 2, 23, 22, 43, 1, 0, 21, 42".split(",");
         //System.out.println(Integer.valueOf("6"));
+        Set<String> s = new HashSet();
+        s.add("dsfafd");
+        s.add("234243");
+        s.add("sdfaf980");
+        System.out.print(s.toString().split(",")[2]);
     }
 }

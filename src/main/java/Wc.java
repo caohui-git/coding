@@ -2,6 +2,8 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -91,7 +93,8 @@ public class Wc {
         }
         return res;
     }
-    public static void main(String[] args){
+    public static  void main(String[] args){
+        /*
         int[] nums = {1, 2, 7, 4, 2, 9, 12, 1};
         Wc wc = new Wc();
         //wc.qs(nums, 0 ,nums.length - 1);
@@ -101,5 +104,9 @@ public class Wc {
         Matcher m  = p.matcher(req);
         if(m.find())
             System.out.println(m.groupCount());
+
+         */
+        Set<String> hs = new HashSet<>();
+
     }
 }
