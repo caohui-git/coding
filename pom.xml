@@ -32,7 +32,12 @@
             <artifactId>hadoop-mapreduce-client-core</artifactId>
             <version>2.7.1</version>
         </dependency>
-
+        <!--stl-->
+        <dependency>
+            <groupId>com.github.servicenow.stl4j</groupId>
+            <artifactId>stl-decomp-4j</artifactId>
+            <version>1.0.5</version>
+        </dependency>
     </dependencies>
     
 </project>
